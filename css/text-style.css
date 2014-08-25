@@ -1,0 +1,40 @@
+/* if you would styling the caption, not work on all browser */
+::cue {
+	background: transparent;
+	text-shadow: 3px 3px 2px rgba(0,0,0,0.5),
+		2px 0 0 #000,
+		-2px 0 0 #000,
+		0 2px 0 #000,
+		0 -2px 0 #000,
+		1px 1px #000,
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000;
+}
+vg-text {
+	color: #FFFFFF;
+	display: table-cell;
+	font-size: 18px;
+	width: 50px;
+	vertical-align: middle;
+	text-align: center;
+	cursor: default;
+	position: relative;
+}
+vg-text ul {
+	position: absolute;
+	bottom: 100%;
+	background-color: #000000;
+	margin-bottom: 0;
+	padding: 10px;
+	right: 0;
+	text-align: left;
+}
+vg-text ul li {
+	list-style: none;
+	padding: 0 10px;	
+}
+vg-text ul li.active,
+vg-text ul li:hover {
+	background-color: #222222;
+}
