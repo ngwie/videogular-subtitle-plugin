@@ -9,7 +9,7 @@ You could see videogular project here: http://www.videogular.com
 
 To use this plugin inject this module to you angular project and add subtitle object on config var.
 
-'''
+```
 'use strict';
 angular.module('myApp',
   [
@@ -44,11 +44,11 @@ angular.module('myApp',
     }
   };
 });
-'''
+```
 
 Then add `<track>` tag inside video tag and add `<vg-text>` directive inside `<vg-controls>`
 
-'''
+```
 <videogular vg-theme="config.theme">
     <vg-video vg-src="config.sources">
         <track></track> <!-- add html5 text track tag -->
@@ -68,7 +68,7 @@ Then add `<track>` tag inside video tag and add `<vg-text>` directive inside `<v
         <vg-fullscreenButton></vg-fullscreenButton>
     </vg-controls>
 </videogular>
-'''
+```
 
 Another thing you might add css style for subtitle controls
 
