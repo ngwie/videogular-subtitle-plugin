@@ -49,9 +49,9 @@ angular.module('myApp').controller('MainCtrl',
 			responsive: false,
 			stretch: $scope.stretchModes[1],
 			sources: [
-				{src: $sce.trustAsResourceUrl("/e2688bb7c1fa754f753b5fe630cde4ce.mp4"), type: "video/mp4"},
-				//{src: $sce.trustAsResourceUrl("http://www.videogular.com/assets/videos/videogular.webm"), type: "video/webm"},
-				//{src: $sce.trustAsResourceUrl("http://www.videogular.com/assets/videos/videogular.ogg"), type: "video/ogg"}
+        {src: $sce.trustAsResourceUrl("http://www.videogular.com/assets/videos/videogular.mp4"), type: "video/mp4"},
+        {src: $sce.trustAsResourceUrl("http://www.videogular.com/assets/videos/videogular.webm"), type: "video/webm"},
+        {src: $sce.trustAsResourceUrl("http://www.videogular.com/assets/videos/videogular.ogg"), type: "video/ogg"}
 			],
 			transclude: true,
 			theme: {
@@ -62,16 +62,11 @@ angular.module('myApp').controller('MainCtrl',
 					url: "assets/images/videogular.png"
 				},
 				subtitle: [{
-									kind: "captions",
-									src: $sce.trustAsResourceUrl("assets/subs/Real-time communication with WebRTC- Google I-O 2013.vtt"),
-									srclang: "en",
-									label: "English"
-								}, {
-									kind: "captions",
-									src: $sce.trustAsResourceUrl("assets/subs/pale-blue-dot.vtt"),
-									srclang: "id",
-									label: "Indonesia"
-								}],
+					kind: "captions",
+					src: $sce.trustAsResourceUrl("assets/subs/pale-blue-dot.vtt"),
+					srclang: "en",
+					label: "English"
+				}],
 				ads: {
 					companion: "companionAd",
 					companionSize: [728, 90],
